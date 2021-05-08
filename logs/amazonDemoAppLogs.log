@@ -1,0 +1,5 @@
+[INFO ] 2021-05-08 23:15:46.127 [main] Log - Test......
+[FATAL] 2021-05-08 23:15:46.129 [main] Log - fatal error
+[DEBUG] 2021-05-08 23:16:23.724 [TestNG-tests-1] Log - Driver initialialized
+[DEBUG] 2021-05-08 23:16:23.822 [TestNG-tests-1] Log - Login into the application
+[DEBUG] 2021-05-08 23:16:39.542 [TestNG-tests-1] Log - Login into the application completed

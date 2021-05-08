@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Search the product on Amazon App" parallel="tests" thread-count="2" >
+  <test name="Product Search">
+    <parameter name="device_Name" value="device_One"/>
+ 	<parameter name="device_UDID" value="ZY2245444Q"/>
+    <parameter name="platform_Version" value="8.1.0"/>
+    <parameter name="server_URL" value="0.0.0.0:4723/wd/hub"/>
+    <classes>
+      <class name="apps.test.Login"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
