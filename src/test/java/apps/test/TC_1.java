@@ -18,7 +18,7 @@ import apps.pages.ProductPage;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 
-public class Login{
+public class TC_1{
 	
 	String product_name;
 	String product_price;

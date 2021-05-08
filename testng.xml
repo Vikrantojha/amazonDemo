@@ -7,7 +7,7 @@
     <parameter name="platform_Version" value="8.1.0"/>
     <parameter name="server_URL" value="0.0.0.0:4723/wd/hub"/>
     <classes>
-      <class name="apps.test.Login"/>
+      <class name="apps.test.TC_1"/>
       
     </classes>
   </test> <!-- Test -->
