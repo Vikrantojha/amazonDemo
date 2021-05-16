@@ -4,6 +4,11 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 import amazonDemoApp.BaseClass;
 import amazonDemoApp.Log;
 import io.appium.java_client.android.AndroidDriver;
@@ -12,9 +17,15 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class HomePage {
-
+	static ExtentTest test;
+	static ExtentReports extent;
+	static ExtentSparkReporter spark;
+	
+	ExtentTest Logger= extent.createTest("Login TC","Login to the application");
 	private static AndroidDriver driver;
 	BaseClass baseClass;
+	
+	
 	
 	@AndroidFindBy(xpath="//*[contains(@resource-id,'action_bar_burger_icon')]")
 	private AndroidElement hamBurgerMenu;
@@ -24,10 +35,9 @@ public class HomePage {
 	private AndroidElement setting_lnk;
 	@AndroidFindBy(xpath="//*[contains(@text,'Country')]")
 	private AndroidElement country_link;
-	// Country/Region: India
 	@AndroidFindBy(xpath="//*[contains(@text,'Australia Amazon.com.au')]")
 	private AndroidElement selectCountry_link;
-	@AndroidFindBy(xpath="(//*[contains(@text,'Done')])[1]")
+	@AndroidFindBy(xpath="//*[@text='Done' and @class='android.widget.Button']")
 	private AndroidElement done_Btn;
 	@AndroidFindBy(xpath="//*[contains(@resource-id,'rs_search_src_text')]")
 	private AndroidElement enter_searchTextBox;
@@ -65,7 +75,8 @@ public class HomePage {
 	
 	
 	
-	public void enterProductToSearch(String productName) {
+	public void enterProductToSearch(String productName,ExtentTest Logger ) {
+		this.Logger=Logger;
 		Log.info("searching product "+productName);
 		if (enter_searchTextBox.isDisplayed()) {
 			cameraBtn.click();
@@ -78,8 +89,15 @@ public class HomePage {
 				enter_searchTextBox.sendKeys(Keys.ENTER);
 				enter_searchTextBox.sendKeys(productName);
 			}
-			searchResult_DropDwn.click();
-			//baseClass.tabByCordinate(driver);
+			
+			if(searchResult_DropDwn.isDisplayed()) {
+				searchResult_DropDwn.click();
+				Logger.log(Status.PASS, "Product search success");
+			}else {
+					Logger.log(Status.FAIL, "Product search Failed");
+			}
+			
+			
 		}
 		
 	}

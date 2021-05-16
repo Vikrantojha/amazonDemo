@@ -34,9 +34,7 @@ public class ProductListPage {
 	
 	
 	public void selectProduct(String tv) throws InterruptedException {
-		/*
-		 * if(currentLocation.isDisplayed()) { baseClass.tabByCordinate(driver); }
-		 */
+		
 		Thread.sleep(5000);
 		Iterator<AndroidElement> ae=productList.iterator();
 		while(ae.hasNext()) {

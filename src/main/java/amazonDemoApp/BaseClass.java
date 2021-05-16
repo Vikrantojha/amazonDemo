@@ -59,10 +59,8 @@ public class BaseClass {
 	
 	public void tabByCordinate(AndroidDriver driver) {
 		this.driver=driver;
-		
 		Dimension size = driver.manage().window().getSize();
 		  System.out.println(size);
-		  
 		  //Find endy point which is at top side of screen.
 		  int starty = (int) (size.height * 0.20);
 		//Find horizontal point 

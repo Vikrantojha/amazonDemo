@@ -29,7 +29,6 @@ public class ProductPage {
 	@AndroidFindBy(xpath = "//*[contains(@text,'Use my current location')]")
 	private AndroidElement currentLocation;
 
-	// protected AndroidDriver driver;
 
 	public ProductPage(AndroidDriver driver) {
 		this.driver = driver;
@@ -39,7 +38,6 @@ public class ProductPage {
 
 	public String getProductName() {
 		String pn;
-		//if(!(driver.findElement(By.xpath("//*[contains(@resource-id,'add-to-cart-button')]")).isDisplayed())) {
 		baseClass.tabByCordinate(driver);
 		pn = product_name.getText();
 		
@@ -53,21 +51,6 @@ public class ProductPage {
 
 	public void addToCart() {
 		
-			//baseClass.scrollDownToElement();	
-		//	addToCart_Btn.click();
-		
-		
-			Dimension dim = driver.manage().window().getSize();
-			int height = dim.getHeight();
-			int width = dim.getWidth();
-			int x = width/2;
-			int top_y = (int)(height*0.80);
-			int bottom_y = (int)(height*0.20);
-			System.out.println("coordinates :" + x + "  "+ top_y + " "+ bottom_y);
-			TouchAction ts = new TouchAction(driver);
-			 PointOption p1= new PointOption();
-			ts.press(p1.point(x, top_y)).moveTo(p1.point(x, bottom_y)).release().perform();
-			
 			baseClass.scrollDownToElement();
 			addToCart_Btn.click();
 		

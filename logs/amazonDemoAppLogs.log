@@ -3,3 +3,37 @@
 [DEBUG] 2021-05-08 23:16:23.724 [TestNG-tests-1] Log - Driver initialialized
 [DEBUG] 2021-05-08 23:16:23.822 [TestNG-tests-1] Log - Login into the application
 [DEBUG] 2021-05-08 23:16:39.542 [TestNG-tests-1] Log - Login into the application completed
+[DEBUG] 2021-05-16 12:39:56.378 [main] Log - Login into the application
+[DEBUG] 2021-05-16 12:42:02.011 [TestNG-tests-1] Log - Login into the application
+[DEBUG] 2021-05-16 12:43:10.025 [TestNG-tests-1] Log - Login into the application
+[DEBUG] 2021-05-16 12:44:54.719 [TestNG-tests-1] Log - Login into the application
+[DEBUG] 2021-05-16 12:47:37.841 [TestNG-tests-1] Log - Login into the application
+[DEBUG] 2021-05-16 12:49:54.160 [TestNG-tests-1] Log - Login into the application
+[DEBUG] 2021-05-16 12:52:06.113 [TestNG-tests-1] Log - Login into the application
+[DEBUG] 2021-05-16 12:54:14.093 [TestNG-tests-1] Log - Login into the application
+[DEBUG] 2021-05-16 12:54:54.207 [TestNG-tests-1] Log - Login into the application completed
+[DEBUG] 2021-05-16 12:59:02.330 [main] Log - Login into the application
+[DEBUG] 2021-05-16 12:59:18.893 [main] Log - Login into the application completed
+[DEBUG] 2021-05-16 13:01:34.168 [main] Log - Login into the application
+[DEBUG] 2021-05-16 13:01:43.916 [main] Log - Login into the application completed
+[DEBUG] 2021-05-16 13:13:06.359 [main] Log - Login into the application
+[DEBUG] 2021-05-16 13:14:09.893 [main] Log - Login into the application
+[DEBUG] 2021-05-16 13:17:41.345 [main] Log - Login into the application
+[DEBUG] 2021-05-16 13:18:27.137 [main] Log - Login into the application completed
+[DEBUG] 2021-05-16 13:19:53.393 [TestNG-tests-1] Log - Login into the application
+[DEBUG] 2021-05-16 13:20:04.907 [TestNG-tests-1] Log - Login into the application completed
+[DEBUG] 2021-05-16 13:20:14.593 [TestNG-tests-1] Log - Login suffessful
+[DEBUG] 2021-05-16 13:20:14.595 [TestNG-tests-1] Log - searching product 65-inch TV Samsung
+[DEBUG] 2021-05-16 13:30:53.742 [main] Log - Login into the application
+[DEBUG] 2021-05-16 13:31:04.294 [main] Log - Login into the application completed
+[DEBUG] 2021-05-16 13:31:16.141 [main] Log - Login suffessful
+[DEBUG] 2021-05-16 13:33:51.685 [main] Log - Login into the application
+[DEBUG] 2021-05-16 13:34:01.525 [main] Log - Login into the application completed
+[DEBUG] 2021-05-16 13:34:11.935 [main] Log - Login suffessful
+[DEBUG] 2021-05-16 13:35:39.579 [main] Log - Login into the application
+[DEBUG] 2021-05-16 13:35:48.912 [main] Log - Login into the application completed
+[DEBUG] 2021-05-16 13:36:05.840 [main] Log - Login suffessful
+[DEBUG] 2021-05-16 13:42:00.876 [main] Log - Login into the application
+[DEBUG] 2021-05-16 13:43:30.579 [main] Log - Login into the application
+[DEBUG] 2021-05-16 13:43:39.249 [main] Log - Login into the application completed
+[DEBUG] 2021-05-16 13:43:48.816 [main] Log - Login suffessful

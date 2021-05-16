@@ -17,7 +17,6 @@ public class LoginPage{
 	
 	private static AndroidDriver driver;
 	
-	Utils generalFuntion =new Utils();
 	BaseClass baseClass;
 	
 	@AndroidFindBy(xpath="//*[contains(@text,'Already a customer')]")
@@ -36,7 +35,7 @@ public class LoginPage{
 	private AndroidElement logedIn_txt;
 	
 	public LoginPage(AndroidDriver driver) {
-		//super(driver);
+		
 		this.driver=driver;
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 		baseClass=new BaseClass(driver);
@@ -45,13 +44,12 @@ public class LoginPage{
 	
 	
 	public void loginToApplication(String userName, String password) throws InterruptedException {
-		//signIn_Btn.click();
+		
 		baseClass.clickOnElement(driver, signIn_Btn);
-		Thread.sleep(5000);
-		//GeneralFuntion.waitTillTheElementVisiblity(driver, 5, "//*[contains(@resource-id,'ap_email_login')]");
+		
 		userName_txt.sendKeys(userName);
 		countiue_Btn.click();
-		Thread.sleep(5000);
+		
 		password_txt.sendKeys(password);
 		submit_Btn.click();
 		Log.info("Login into the application completed");

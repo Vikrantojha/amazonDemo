@@ -1,122 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Search the product on Amazon App" duration-ms="88205" started-at="2021-05-08T23:16:09 IST" finished-at="2021-05-08T23:17:37 IST">
+  <suite name="Default suite" duration-ms="32459" started-at="2021-05-16T13:43:16 IST" finished-at="2021-05-16T13:43:49 IST">
     <groups>
     </groups>
-    <test name="Product Search" duration-ms="88205" started-at="2021-05-08T23:16:09 IST" finished-at="2021-05-08T23:17:37 IST">
-      <class name="apps.test.Login">
-        <test-method status="PASS" signature="loginToApplicaiton_TC()[pri:1, instance:apps.test.Login@2118cddf]" name="loginToApplicaiton_TC" duration-ms="30273" started-at="2021-05-08T23:16:09 IST" finished-at="2021-05-08T23:16:39 IST">
+    <test name="Default test" duration-ms="32459" started-at="2021-05-16T13:43:16 IST" finished-at="2021-05-16T13:43:49 IST">
+      <class name="apps.test.TC_1">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:apps.test.TC_1@7c83dc97]" name="startTest" is-config="true" duration-ms="149" started-at="2021-05-16T13:43:16 IST" finished-at="2021-05-16T13:43:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="loginToApplicaiton_TC()[pri:1, instance:apps.test.TC_1@7c83dc97]" name="loginToApplicaiton_TC" duration-ms="22507" started-at="2021-05-16T13:43:16 IST" finished-at="2021-05-16T13:43:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplicaiton_TC -->
-        <test-method status="PASS" signature="HomePageTest_TC()[pri:2, instance:apps.test.Login@2118cddf]" name="HomePageTest_TC" duration-ms="22165" started-at="2021-05-08T23:16:39 IST" finished-at="2021-05-08T23:17:01 IST">
+        <test-method status="PASS" signature="HomePageTest_TC()[pri:2, instance:apps.test.TC_1@7c83dc97]" name="HomePageTest_TC" duration-ms="9564" started-at="2021-05-16T13:43:39 IST" finished-at="2021-05-16T13:43:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePageTest_TC -->
-        <test-method status="FAIL" signature="ProductListPage_TC()[pri:3, instance:apps.test.Login@2118cddf]" name="ProductListPage_TC" duration-ms="35740" started-at="2021-05-08T23:17:01 IST" finished-at="2021-05-08T23:17:37 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //*[contains(@text,'Samsung 163 cm')]})]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //*[contains(@text,'Samsung 163 cm')]})
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.getText(<generated>)
-at apps.pages.ProductPage.getProductName(ProductPage.java:44)
-at apps.test.Login.ProductListPage_TC(Login.java:83)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@142a12b4 (tried for 1 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-... 27 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[contains(@text,'Samsung 163 cm')]})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NUGMMBG', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: AndroidDriver
-at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 29 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:apps.test.TC_1@7c83dc97]" name="endTest" is-config="true" duration-ms="219" started-at="2021-05-16T13:43:48 IST" finished-at="2021-05-16T13:43:49 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductListPage_TC -->
-        <test-method status="FAIL" signature="cartPage_TC()[pri:3, instance:apps.test.Login@2118cddf]" name="cartPage_TC" duration-ms="1" started-at="2021-05-08T23:17:37 IST" finished-at="2021-05-08T23:17:37 IST">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at apps.test.Login.cartPage_TC(Login.java:93)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cartPage_TC -->
-      </class> <!-- apps.test.Login -->
-    </test> <!-- Product Search -->
-  </suite> <!-- Search the product on Amazon App -->
+        </test-method> <!-- endTest -->
+      </class> <!-- apps.test.TC_1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

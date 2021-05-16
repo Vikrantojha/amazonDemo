@@ -7,12 +7,13 @@
     <parameter name="platform_Version" value="8.1.0"/>
     <parameter name="server_URL" value="0.0.0.0:4723/wd/hub"/>
     <classes>
-      <class name="apps.test.Login">
+      <class name="apps.test.TC_1">
         <methods>
-          <include name="cartPage_TC"/>
-          <include name="ProductListPage_TC"/>
+          <include name="HomePageTest_TC"/>
+          <include name="endTest"/>
+          <include name="startTest"/>
         </methods>
-      </class> <!-- apps.test.Login -->
+      </class> <!-- apps.test.TC_1 -->
     </classes>
   </test> <!-- Product Search(failed) -->
 </suite> <!-- Failed suite [Search the product on Amazon App] -->

@@ -11,7 +11,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 public class CartPage {
 	private static AndroidDriver driver;
 
-	@AndroidFindBy(xpath = "(//*[contains(@text,'Samsung')])[2]")
+	@AndroidFindBy(xpath = "//*[contains(@text,'Samsung') and @class='android.widget.TextView']")
 	private AndroidElement product_name;
 	@AndroidFindBy(xpath = "//*[(@text='Cart']")
 	private AndroidElement view_CrtBtn;

@@ -32,12 +32,7 @@ public class DriverClass {
 			driver = new AndroidDriver(new URL("http", "0.0.0.0", 4723, "/wd/hub"),caps);
 			driver.rotate(ScreenOrientation.PORTRAIT );
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Dimension screenSize = driver.manage().window().getSize();
-			int hight=screenSize.getHeight();
-			int width=screenSize.getWidth();
-			//driver.context("NATIVE_APP");
-			//driver.manage().window().setSize(new Dimension(hight, width));
-			Log.info("Driver initialialized");
+			
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}

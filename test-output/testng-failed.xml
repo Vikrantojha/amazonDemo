@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Search the product on Amazon App]" parallel="tests">
-  <test thread-count="2" name="Product Search(failed)" parallel="tests">
-    <parameter name="device_UDID" value="ZY2245444Q"/>
-    <parameter name="device_Name" value="device_One"/>
-    <parameter name="platform_Version" value="8.1.0"/>
-    <parameter name="server_URL" value="0.0.0.0:4723/wd/hub"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apps.test.Login">
+      <class name="apps.test.TC_1">
         <methods>
-          <include name="cartPage_TC"/>
-          <include name="ProductListPage_TC"/>
+          <include name="endTest"/>
+          <include name="loginToApplicaiton_TC"/>
+          <include name="startTest"/>
         </methods>
-      </class> <!-- apps.test.Login -->
+      </class> <!-- apps.test.TC_1 -->
     </classes>
-  </test> <!-- Product Search(failed) -->
-</suite> <!-- Failed suite [Search the product on Amazon App] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
